@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Name Display</title>
+</head>
+<body>
+
+  <label for="nameInput">Enter your name:</label>
+  <input type="text" id="nameInput">
+  <button onclick="displayName()">Display Name</button>
+  <p id="nameDisplay"></p>
+
+  <script>
+    function displayName() {
+      var name = document.getElementById("nameInput").value;
+      document.getElementById("nameDisplay").innerText = "Your name is: " + name;
+    }
+  </script>
+  <!-- desc -->
+<!-- HTML Structure:
+
+The HTML file starts with <!DOCTYPE html> which declares the document type and version of HTML being used.
+Inside the <body> tag, there is a label, an input field, a button, and a paragraph element. These are the elements that will be used to create the form and display the name.
+JavaScript Function:
+
+Inside the <script> tag, there is a JavaScript function called displayName().
+This function is triggered when the "Display Name" button is clicked (onclick="displayName()").
+Inside the function, the value entered in the input field is retrieved using document.getElementById("nameInput").value.
+The retrieved name is then displayed in the paragraph element using document.getElementById("nameDisplay").innerText.
+Function Explanation:
+
+When the "Display Name" button is clicked, the displayName() function is called.
+The function retrieves the value entered in the input field using document.getElementById("nameInput").value.
+It then sets the text content of the paragraph element with the id "nameDisplay" to "Your name is: " followed by the entered name.
+Result:
+
+When you open the HTML file in a web browser, you'll see a form with an input field and a button.
+When you enter your name in the input field and click the button, the entered name will be displayed below the button. -->
+</body>
+</html>

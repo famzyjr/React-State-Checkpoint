@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text Copy with Font Size</title>
+</head>
+<body>
+
+  <label for="input1">Input 1:</label>
+  <input type="text" id="input1"><br><br>
+  
+  <label for="input2">Input 2:</label>
+  <input type="text" id="input2" style="font-size: 28px;"><br><br>
+  
+  <button onclick="copyText()">Copy Text</button><br><br>
+
+  <script>
+    function copyText() {
+      var textToCopy = document.getElementById("input1").value;
+      document.getElementById("input2").value = textToCopy;
+    }
+  </script>
+
+<!-- desc -->
+<!-- In this HTML code:
+
+Two input fields are created for entering the text. The second input field has an inline style to set the font size to 28px.
+A button labeled "Copy Text" is added to trigger the copying functionality.
+The copyText() function is called when the "Copy Text" button is clicked. This function retrieves the text from the first input field and sets it as the value of the second input field.
+Save this code in an HTML file and open it in a web browser. You can then enter text in the first textbox, click the "Copy Text" button, and see the text copied to the second textbox with a font size of 28. -->
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Name and Department Display</title>
+</head>
+<body>
+
+  <label for="nameInput">Name:</label>
+  <input type="text" id="nameInput"><br><br>
+  
+  <label for="departmentInput">Department:</label>
+  <input type="text" id="departmentInput"><br><br>
+  
+  <button onclick="displayName()">Name</button>
+  <button onclick="displayDepartment()">Department</button>
+  <button onclick="clearText()">Clear</button>
+  <button onclick="exitProgram()">Exit</button><br><br>
+
+  <script>
+    function displayName() {
+      var name = "Your Name";
+      document.getElementById("nameInput").value = name;
+    }
+
+    function displayDepartment() {
+      var department = "Your Department";
+      document.getElementById("departmentInput").value = department;
+    }
+
+    function clearText() {
+      document.getElementById("nameInput").value = "";
+      document.getElementById("departmentInput").value = "";
+    }
+
+    function exitProgram() {
+      // You can add any additional functionality here before exiting
+      window.close(); // This will close the browser window
+    }
+  </script>
+
+<!-- desc -->
+
+<!-- In this HTML code:
+
+Two input fields are created for entering the name and department.
+Four buttons are added: "Name", "Department", "Clear", and "Exit".
+The "Name" button calls the displayName() function to display the name in the name input field.
+The "Department" button calls the displayDepartment() function to display the department in the department input field.
+The "Clear" button calls the clearText() function to clear the content of both input fields.
+The "Exit" button calls the exitProgram() function to close the browser window.
+Save this code in an HTML file and open it in a web browser. You can then interact with the form to display the name and department, clear the text, and exit the program. -->
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add and Subtract Numbers</title>
+  <script>
+    function addNumbers() {
+      var num1 = parseInt(document.getElementById("num1").value);
+      var num2 = parseInt(document.getElementById("num2").value);
+      if (!isNaN(num1) && !isNaN(num2)) {
+        var result = num1 + num2;
+        alert("The sum is: " + result);
+      } else {
+        alert("Please enter valid integer numbers");
+      }
+    }
+
+    function subtractNumbers() {
+      var num1 = parseInt(document.getElementById("num1").value);
+      var num2 = parseInt(document.getElementById("num2").value);
+      if (!isNaN(num1) && !isNaN(num2)) {
+        var result = num1 - num2;
+        alert("The difference is: " + result);
+      } else {
+        alert("Please enter valid integer numbers");
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <label for="num1">Number 1:</label>
+  <input type="text" id="num1"><br><br>
+  
+  <label for="num2">Number 2:</label>
+  <input type="text" id="num2"><br><br>
+  
+  <button onclick="addNumbers()">Add</button>
+  <button onclick="subtractNumbers()">Subtract</button>
+
+</body>
+</html>
+
+<!-- desc -->
+
+<!-- In this HTML code:
+
+Two input fields are created for entering the numbers.
+Two buttons, "Add" and "Subtract", are added to trigger the addition and subtraction operations, respectively.
+The addNumbers() and subtractNumbers() functions are called when the buttons are clicked. These functions retrieve the numbers from the input fields, perform the operations, and display the results using the alert() function.
+Save this code in an HTML file and open it in a web browser. You can then enter two integer numbers, click the "Add" or "Subtract" button, and see the results displayed in alert message boxes. -->

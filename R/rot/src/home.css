@@ -1,0 +1,35 @@
+
+body{
+margin: 0;
+padding: 0;
+}
+
+.navs{
+    background-color: blue;
+    height: 100px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.text{
+    color: red;
+    margin-top: 100px;
+}
+
+ .navs > a{
+    padding: 20px;
+    text-decoration: none;
+    color: red;
+     position: relative;
+     top: 50px;
+     left: 550px;
+     padding-left: 100px;
+     /* margin-left: 100px; */
+}
+
+.sign{
+    margin-top: 200px;
+    margin-left: 600px;
+}
